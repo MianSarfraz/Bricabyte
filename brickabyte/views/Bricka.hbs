@@ -1,0 +1,1755 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="/Assets/favicon.png" type="image/x-icon" />
+
+    <!-- REMIXICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+    />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    />
+
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/Bricka.css" />
+
+    <title>BrickaByte - Pakistan</title>
+  </head>
+
+  <body>
+
+    <!-- Milestone-1 / Start / 25 Oct, 2023 -->
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="/" class="nav__logo">
+          <i class="ri-building-2-line"></i>
+          BRICKA BYTE
+        </a>
+
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="/Bricka" class="nav__link active-link">
+                <i class="ri-home-line"></i>
+                <span>Home</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="/about" class="nav__link">
+                <i class="ri-star-line"></i>
+                <span>About Us</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="/estimation" class="nav__link">
+                <i class="ri-price-tag-3-line"></i>
+                <span>Estimation</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="/Products" class="nav__link">
+                <i class="ri-seo-line"></i>
+                <span>Products</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="/careers" class="nav__link">
+                <i class="ri-message-3-line"></i>
+                <span>Careers</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="/contact" class="nav__link">
+                <i class="ri-discuss-line"></i>
+                <span>Contact Us</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="/blog" class="nav__link">
+                <i class="ri-file-list-3-line"></i>
+                <span>Blog</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__actions">
+          {{#if user}}
+            <li>Welcome, {{user.firstName}}</li>
+            <!-- Logout Button -->
+            <a href="/logout" class="logout-button">
+              <i class="ri-logout-box-r-line" id="logout-buttons"></i>
+            </a>
+          {{else}}
+            <a href="/login" class="login-button">
+              <i class="ri-user-line" id="login-button"></i>
+            </a>
+          {{/if}}
+          <!-- Search Button -->
+          <a href="#search" class="search-button">
+            <i class="ri-search-2-line" id="search-button"></i>
+          </a>
+          <!-- Cart -->
+          <a href="#cart" class="cart-button">
+            <i class="ri-shopping-cart-line" id="cart-button"></i>
+          </a>
+
+          <!-- Theme Button -->
+          <i class="ri-moon-line" id="theme-button"></i>
+
+        </div>
+
+      </nav>
+    </header>
+
+    <!-- SEARCH -->
+    <div class="search" id="search-content">
+      <form action="" class="search__form">
+        <i class="ri-search-2-line search__icon"></i>
+        <input
+          type="search"
+          placeholder="What are you looking for?"
+          class="search__input"
+        />
+      </form>
+      <i class="ri-close-line search__close" id="search-close"></i>
+
+      <!-- Feature Products Section -->
+      <section class="feature-section">
+        <h2>Similar Products</h2>
+
+        <div class="feature-products">
+
+          <div class="product-card">
+            <img src="Assets/ftp1.png" alt="Product 1" />
+            <h3>Awal</h3>
+            <p>For solid structures, rely on our town's finest bricks today.
+              Unmatched bricks, the top choice in the city.
+            </p>
+            <button onclick="document.getElementById('cart-button').click()">Go
+              to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="Assets/ftp2.png" alt="Product 2" />
+            <h3>Doom 1</h3>
+            <p>In our town, the most trusted bricks for sturdy foundations.
+              Quality that stands tall, these bricks are your best investment.</p>
+            <button onclick="document.getElementById('cart-button').click()">Go
+              to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="Assets/ftp3.png" alt="Product 3" />
+            <h3>Doom 2</h3>
+            <p>Premium bricks, the epitome of excellence in town. Building
+              dreams with durability, these bricks lead the way.</p>
+            <button onclick="document.getElementById('cart-button').click()">Go
+              to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="Assets/ftp4.png" alt="Product 4" />
+            <h3>Doom 3</h3>
+            <p>The town's supreme bricks, unparalleled in quality. Superior
+              bricks reign as the pinnacle choice within the town.
+            </p>
+            <button onclick="document.getElementById('cart-button').click()">Go
+              to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="Assets/ftp5.png" alt="Product 5" />
+            <h3>Soom 1</h3>
+            <p>For solid structures, rely on our town's finest bricks today.
+              Unmatched bricks, the top choice in the city.
+            </p>
+            <button onclick="document.getElementById('cart-button').click()">Go
+              to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="Assets/fpt6.png" alt="Product 6" />
+            <h3>Soom 2</h3>
+            <p>In our town, the most trusted bricks for sturdy foundations.
+              Quality that stands tall, these bricks are your best investment.</p>
+            <button onclick="document.getElementById('cart-button').click()">Go
+              to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="Assets/ftp7.png" alt="Product 7" />
+            <h3>Soom 3</h3>
+            <p>Premium bricks, the epitome of excellence in town. Building
+              dreams with durability, these bricks lead the way.</p>
+            <button onclick="document.getElementById('cart-button').click()">Go
+              to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="Assets/ftp8.png" alt="Product 8" />
+            <h3>Premium</h3>
+            <p>The town's supreme bricks, unparalleled in quality. Superior
+              bricks reign as the pinnacle choice within the town.
+            </p>
+            <button onclick="document.getElementById('cart-button').click()">Go
+              to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="Assets/ftp9.png" alt="Product 9" />
+            <h3>Gold</h3>
+            <p>The town's supreme bricks, unparalleled in quality. Superior
+              bricks reign as the pinnacle choice within the town.
+            </p>
+            <button onclick="document.getElementById('cart-button').click()">Go
+              to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="Assets/ftp10.png" alt="Product 10" />
+            <h3>Silver</h3>
+            <p>The town's supreme bricks, unparalleled in quality. Superior
+              bricks reign as the pinnacle choice within the town.
+            </p>
+            <button onclick="document.getElementById('cart-button').click()">Go
+              to Cart</button>
+          </div>
+
+        </div>
+
+        <!-- Add more product cards as needed -->
+      </section>
+    </div>
+
+    <!-- CART -->
+    <div class="cart" id="cart-content">
+      <div class="cart__container">
+        <h1>Shopping Cart</h1>
+        <div class="cart__products">
+
+          <div class="cart__product" id="product1">
+            <img src="Assets/ftp1.png" alt="Product 1" />
+            <p>Awal - Rs.55
+              <Rs class="55" />
+            </p>
+            <input type="number" id="quantity1" value="1" min="1" />
+            <button onclick="addToCart('Product 1', 55, 'quantity1')">Add to
+              Cart</button>
+          </div>
+
+          <div class="cart__product" id="product2">
+            <img src="Assets/ftp2.png" alt="Product 2" />
+            <p>Doom 1 - Rs.50
+              <Rs class="50" />
+            </p>
+            <input type="number" id="quantity2" value="1" min="1" />
+            <button onclick="addToCart('Product 2', 50, 'quantity2')">Add to
+              Cart</button>
+          </div>
+
+          <div class="cart__product" id="product3">
+            <img src="Assets/ftp3.png" alt="Product 3" />
+            <p>Doom 2 - Rs.45
+              <Rs class="45" />
+            </p>
+            <input type="number" id="quantity3" value="1" min="1" />
+            <button onclick="addToCart('Product 3', 45, 'quantity3')">Add to
+              Cart</button>
+          </div>
+
+          <div class="cart__product" id="product4">
+            <img src="Assets/ftp4.png" alt="Product 4" />
+            <p>Doom 3 - Rs.40
+              <Rs class="40" />
+            </p>
+            <input type="number" id="quantity4" value="1" min="1" />
+            <button onclick="addToCart('Product 4', 40, 'quantity4')">Add to
+              Cart</button>
+          </div>
+
+          <div class="cart__product" id="product5">
+            <img src="Assets/ftp5.png" alt="Product 5" />
+            <p>Soom 1 - Rs.35
+              <Rs class="35" />
+            </p>
+            <input type="number" id="quantity5" value="1" min="1" />
+            <button onclick="addToCart('Product 5', 35, 'quantity5')">Add to
+              Cart</button>
+          </div>
+
+          <div class="cart__product" id="product6">
+            <img src="Assets/fpt6.png" alt="Product 6" />
+            <p>Soom 2 - Rs.30
+              <Rs class="30" />
+            </p>
+            <input type="number" id="quantity6" value="1" min="1" />
+            <button onclick="addToCart('Product 6', 30, 'quantity6')">Add to
+              Cart</button>
+          </div>
+
+          <div class="cart__product" id="product7">
+            <img src="Assets/ftp7.png" alt="Product 2" />
+            <p>Soom 3 - Rs.25
+              <Rs class="25" />
+            </p>
+            <input type="number" id="quantity7" value="1" min="1" />
+            <button onclick="addToCart('Product 7', 25, 'quantity7')">Add to
+              Cart</button>
+          </div>
+
+          <div class="cart__product" id="product8">
+            <img src="Assets/ftp8.png" alt="Product 8" />
+            <p>Premium - Rs.100
+              <Rs class="100" />
+            </p>
+            <input type="number" id="quantity8" value="1" min="1" />
+            <button onclick="addToCart('Product 8', 100, 'quantity8')">Add to
+              Cart</button>
+          </div>
+
+          <div class="cart__product" id="product2">
+            <img src="Assets/ftp9.png" alt="Product 9" />
+            <p>Gold - Rs.95
+              <Rs class="95" />
+            </p>
+            <input type="number" id="quantity9" value="1" min="1" />
+            <button onclick="addToCart('Product 9', 95, 'quantity9')">Add to
+              Cart</button>
+          </div>
+
+          <div class="cart__product" id="product10">
+            <img src="Assets/ftp10.png" alt="Product 10" />
+            <p>Silver - Rs.75
+              <Rs class="75" />
+            </p>
+            <input type="number" id="quantity10" value="1" min="1" />
+            <button onclick="addToCart('Product 10', 75, 'quantity10')">Add to
+              Cart</button>
+          </div>
+
+        </div>
+        <div class="cart1">
+          <h2>Cart</h2>
+          <ul id="cart-items">
+
+          </ul>
+          <p>Total: Rs.<span id="total">0</span></p>
+          <button class="button" onclick="checkout()">Checkout</button>
+        </div>
+      </div>
+
+      <i class="ri-close-line cart__close" id="cart-close"></i>
+    </div>
+
+     <main class="main">
+        <!-- HOME -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Comprehensive Procurement Solution <br>
+                        <span>Seamless Sourcing Advancement</span>
+                    </h1>
+
+                    <p class="home__description">
+                        Our mission is to forge your success through unwavering
+                        commitment to excellence, tailored to meet your distinct
+                        construction aspirations.
+                    </p>
+
+                    <a href="#" class="button" id="btn-1" onclick="document.getElementById('cart-button').click()">Buy
+                        Now</a>
+                    <a href="#calculator" class="button" id="btn-2">Elevate Your Financial Possibilities</a>
+                </div>
+
+                <div class="home__images">
+                    <div class="home__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <article class="home__article swiper-slide">
+                                <img src="Assets/img1.png" alt="image" class="home__img">
+                            </article>
+
+                            <article class="home__article swiper-slide">
+                                <img src="Assets/img2.png" alt="image" class="home__img">
+                            </article>
+
+                            <article class="home__article swiper-slide">
+                                <img src="Assets/img3.png" alt="image" class="home__img">
+                            </article>
+
+                            <article class="home__article swiper-slide">
+                                <img src="Assets/img4.png" alt="image" class="home__img">
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Milestone-1 / End / 02 Nov, 2023 -->
+
+        <!-- Milestone-2 / Start / 12 Nov, 2023 -->
+
+        <!-- Stats -->
+        <section class="stats section">
+            <h1 class="stats__heading">
+                Fostering Expansion, Elevating Efficiency
+            </h1>
+
+            <div class="stats__container container grid">
+
+                <div class="container-1">
+                    <i class="ri-wallet-3-line"></i>
+                    <span class="num" data-val="5000">000</span>
+                    <span class="text">PKR/- Cost saved</span>
+                </div>
+
+                <div class="container-1">
+                    <i class="ri-time-line"></i>
+                    <span class="num" data-val="42">000</span>
+                    <span class="text">Hours/-Time saved </span>
+                </div>
+
+                <div class="container-1">
+                    <i class="ri-earth-fill"></i>
+                    <span class="num" data-val="25">000</span>
+                    <span class="text">+ Cities Reached</span>
+                </div>
+
+                <div class="container-1">
+                    <i class="ri-cash-line"></i>
+                    <span class="num" data-val="1200">000</span>
+                    <span class="text">Transaction Processed</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="services section">
+            <h1 class="services__heading">
+                Bricka elevating your choices, exceeding your expectations
+            </h1>
+            <div class="services__container container grid">
+                <article class="services__card">
+                    <i class="ri-truck-line"></i>
+                    <h3 class="services__title">Fast Deliver</h3>
+                    <p class="services__description">within 48 hours and
+                        order tracking</p>
+                </article>
+
+                <article class="services__card">
+                    <i class="ri-lock-2-line"></i>
+                    <h3 class="services__title">Payment</h3>
+                    <p class="services__description">100% Secure Payment</p>
+                </article>
+
+                <article class="services__card">
+                    <i class="ri-bank-card-line"></i>
+                    <h3 class="services__title">Buy on Credit</h3>
+                    <p class="services__description">Build your credit
+                        history with Bricka</p>
+                </article>
+
+                <article class="services__card">
+                    <i class="ri-exchange-dollar-line"></i>
+                    <h3 class="services__title">Quality Assurance</h3>
+                    <p class="services__description">Certified suppliers &
+                        24 hour refund policy</p>
+                </article>
+
+                <article class="services__card">
+                    <i class="ri-wallet-3-line"></i>
+                    <h3 class="services__title">Cheap Rates</h3>
+                    <p class="services__description">Wide range of products &
+                        lowest rates guaranteed</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Benifits -->
+        <section class="benifits__section" id="benifits">
+            <h1 class="benifits__heading">
+                Benefits for Buyers & Suppliers
+            </h1>
+
+            <div class="benifits__content">
+                <div class="left__buyrs">
+                    <h1>Buyrs</h1>
+                    <i class="ri-funds-line"><span>Inventory Management</span></i>
+                    <i class="ri-bar-chart-fill"><span>Grow Your Business</span></i>
+                    <i class="ri-bar-chart-horizontal-line"><span>Transparency</span></i>
+                    <i class="ri-secure-payment-line"><span>Flexible Payment Options</span></i>
+                </div>
+
+                <div class="right__suppliers">
+                    <h1>Suppliers</h1>
+                    <i class="ri-money-dollar-circle-line"><span>Advance Payment</span></i>
+                    <i class="ri-medal-line"><span>High order Volume</span></i>
+                    <i class="ri-truck-line"><span>Mega Client Base</span></i>
+                    <i class="ri-mastercard-fill"><span>Pak Orders</span></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED -->
+        <section class="featured section" id="featured">
+            <h2 class="section__title featured__h2">
+                Featured Material
+            </h2>
+
+            <div class="featured__container container">
+                <div class="featured__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="featured__card swiper-slide">
+                            <img src="Assets/ftp1.png" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Awal</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">Rs.55/-</span>
+                                <span class="featured__price">Rs.60/-</span>
+                            </div>
+
+                            <button class="button" onclick="document.getElementById('cart-button').click()">Shop
+                                Now</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-2-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+
+                        </article>
+
+                        <article class="featured__card swiper-slide">
+                            <img src="Assets/ftp2.png" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Doom 1</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">Rs.50/-</span>
+                                <span class="featured__price">Rs.55/-</span>
+                            </div>
+
+                            <button class="button" onclick="document.getElementById('cart-button').click()">Shop
+                                Now</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-2-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+
+                        </article>
+
+                        <article class="featured__card swiper-slide">
+                            <img src="Assets/ftp3.png" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Doom 2</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">Rs.45/-</span>
+                                <span class="featured__price">Rs.50/-</span>
+                            </div>
+
+                            <button class="button" onclick="document.getElementById('cart-button').click()">Shop
+                                Now</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-2-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+
+                        </article>
+
+                        <article class="featured__card swiper-slide">
+                            <img src="Assets/ftp4.png" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Doom 3</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">Rs.40/-</span>
+                                <span class="featured__price">Rs.45/-</span>
+                            </div>
+
+                            <button class="button" onclick="document.getElementById('cart-button').click()">Shop
+                                Now</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-2-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+
+                        </article>
+
+                        <article class="featured__card swiper-slide">
+                            <img src="Assets/ftp5.png" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Soom 1</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">Rs.35/-</span>
+                                <span class="featured__price">Rs.40/-</span>
+                            </div>
+
+                            <button class="button" onclick="document.getElementById('cart-button').click()">Shop
+                                Now</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-2-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+
+                        </article>
+
+                        <article class="featured__card swiper-slide">
+                            <img src="Assets/fpt6.png" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Soom 2</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">Rs.30/-</span>
+                                <span class="featured__price">Rs.35/-</span>
+                            </div>
+
+                            <button class="button" onclick="document.getElementById('cart-button').click()">Shop
+                                Now</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-2-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+
+                        </article>
+
+                        <article class="featured__card swiper-slide">
+                            <img src="Assets/ftp7.png" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Soom 3</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">Rs.25/-</span>
+                                <span class="featured__price">Rs.30/-</span>
+                            </div>
+
+                            <button class="button" onclick="document.getElementById('cart-button').click()">Shop
+                                Now</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-2-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+
+                        </article>
+
+                        <article class="featured__card swiper-slide">
+                            <img src="Assets/ftp8.png" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Premium</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">Rs.100/-</span>
+                                <span class="featured__price">Rs.125/-</span>
+                            </div>
+
+                            <button class="button" onclick="document.getElementById('cart-button').click()">Shop
+                                Now</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-2-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+
+                        </article>
+
+                        <article class="featured__card swiper-slide">
+                            <img src="Assets/ftp9.png" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Gold</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">Rs.95/-</span>
+                                <span class="featured__price">Rs.120/-</span>
+                            </div>
+
+                            <button class="button" onclick="document.getElementById('cart-button').click()">Shop
+                                Now</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-2-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+
+                        </article>
+
+                        <article class="featured__card swiper-slide">
+                            <img src="Assets/ftp10.png" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Silver</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">Rs.75/-</span>
+                                <span class="featured__price">Rs.100/-</span>
+                            </div>
+
+                            <button class="button" onclick="document.getElementById('cart-button').click()">Shop
+                                Now</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-2-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+
+                        </article>
+                    </div>
+
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Milestone-2 / End / 25 Nov, 2023 -->
+
+        <!-- Milestone-3 / Start / 1 Dec, 2023 -->
+
+        <!-- DISCOUNT -->
+        <section class="discount section" id="discount">
+            <div class="discount__container container grid">
+                <div class="discount__data">
+                    <h2 class="discount__title section__title">
+                        Up To 50% Discount
+                    </h2>
+
+                    <p class="discount__description">
+                        Take advantage of the discount days we have for you, buy material from
+                        your favorite store, the more you buy, the more discounts we have for you.
+                    </p>
+
+                    <button class="button" onclick="document.getElementById('cart-button').click()">Shop Now</button>
+                </div>
+
+                <div class="discount__images">
+                    <img src="Assets/ftp1.png" alt="" class="discount__img-1">
+                    <img src="Assets/ftp4.png" alt="" class="discount__img-2">
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW PRODUCTS -->
+        <section class="new section" id="products">
+            <h2 class="section__title new__h2">
+                New Material
+            </h2>
+
+            <div class="new__container container">
+                <div class="new__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/ftp1.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">Awal</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">Rs.55/-</span>
+                                    <span class="new__price">Rs.60/-</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/ftp2.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">Doom 1</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">Rs.50/-</span>
+                                    <span class="new__price">Rs.55/-</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/ftp3.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">Doom 2</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">Rs.45/-</span>
+                                    <span class="new__price">Rs.50/-</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/ftp4.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">Doom 3</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">Rs.40/-</span>
+                                    <span class="new__price">Rs.45/-</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/ftp5.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">Soom 1</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">Rs.35/-</span>
+                                    <span class="new__price">Rs.40/-</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/fpt6.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">Soom 2</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">Rs.30/-</span>
+                                    <span class="new__price">Rs.35/-</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/ftp7.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">Soom 3</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">Rs.25/-</span>
+                                    <span class="new__price">Rs.30/-</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/ftp8.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">Premium</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">Rs.100/-</span>
+                                    <span class="new__price">Rs.125/-</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/ftp9.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">Gold</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">Rs.95/-</span>
+                                    <span class="new__price">Rs.120/-</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/ftp8.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">Silver</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">Rs.75/-</span>
+                                    <span class="new__price">Rs.100/-</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="new__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/ftp10.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">Silver</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">Rs.75/-</span>
+                                    <span class="new__price">Rs.100/-</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/ftp9.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">Gold</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">Rs.95/-</span>
+                                    <span class="new__price">Rs.120/-</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/ftp8.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">Premium</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">Rs.100/-</span>
+                                    <span class="new__price">Rs.125/-</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/ftp7.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">Soom 3</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">Rs.25/-</span>
+                                    <span class="new__price">Rs.30/-</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/fpt6.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">Soom 2</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">Rs.30/-</span>
+                                    <span class="new__price">Rs.35/-</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/ftp5.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">Soom 1</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">Rs.35/-</span>
+                                    <span class="new__price">Rs.40/-</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/ftp4.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">Doom 3</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">Rs.40/-</span>
+                                    <span class="new__price">
+                                        <Rs class="45"></Rs>/-
+                                    </span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/ftp3.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">Doom 2</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">Rs.45/-</span>
+                                    <span class="new__price">Rs.50/-</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/ftp2.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">Doom 1</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">Rs.50/-</span>
+                                    <span class="new__price">Rs.55/-</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/ftp1.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">Awal</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">Rs.55/-</span>
+                                    <span class="new__price">Rs.60/-</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- JOIN -->
+        <section class="join section">
+            <div class="join__container">
+                <img src="Assets/join.jpg" alt="image" class="join__bg">
+
+                <div class="join__data container grid">
+                    <h2 class="join__title section__title">
+                        Subscribe to receive <br>
+                        The Latest Updates
+                    </h2>
+
+                    <form action="" class="join__form">
+                        <input type="email" placeholder="Enter Email Address" class="join__input">
+                        <button class="button join__button" type="submit" class="join__button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Milestone-3 / End / 7 Dec, 2023 -->
+
+        <!-- Milestone-4 / Start / 10 Dec, 2023 -->
+
+        <!-- TESTIMONIAL -->
+        <section class="testimonial section" id="testimonial">
+            <h2 class="section__title section__h2">
+                Client's Feedback
+            </h2>
+
+            <div class="testimonial__container container">
+                <div class="testimonial__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="testimonial__card swiper-slide">
+                            <img src="Assets/test1.jpg" alt="image" class="testimonial__img">
+
+                            <h2 class="testimonial__title">Riaz Ahmad</h2>
+                            <p class="testimonial__description">Best Experience, best material, best
+                                place to buy material for your property.
+                            </p>
+
+                            <div class="testimonial__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </article>
+
+                        <article class="testimonial__card swiper-slide">
+                            <img src="Assets/test2.jpg" alt="image" class="testimonial__img">
+
+                            <h2 class="testimonial__title">Farhan Ali</h2>
+                            <p class="testimonial__description">Best Experience, best material, best
+                                place to buy material for your property.
+                            </p>
+
+                            <div class="testimonial__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </article>
+
+                        <article class="testimonial__card swiper-slide">
+                            <img src="Assets/test3.jpg" alt="image" class="testimonial__img">
+
+                            <h2 class="testimonial__title">Khurram Shehzad</h2>
+                            <p class="testimonial__description">Best Experience, best material, best
+                                place to buy material for your property.
+                            </p>
+
+                            <div class="testimonial__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </article>
+
+                        <article class="testimonial__card swiper-slide">
+                            <img src="Assets/test4.jpg" alt="image" class="testimonial__img">
+
+                            <h2 class="testimonial__title">Munir Haider</h2>
+                            <p class="testimonial__description">Best Experience, best material, best
+                                place to buy material for your property.
+                            </p>
+
+                            <div class="testimonial__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </article>
+
+                        <article class="testimonial__card swiper-slide">
+                            <img src="Assets/test5.jpg" alt="image" class="testimonial__img">
+
+                            <h2 class="testimonial__title">Ali AKbar</h2>
+                            <p class="testimonial__description">Best Experience, best material, best
+                                place to buy material for your property.
+                            </p>
+
+                            <div class="testimonial__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <section class="contact section" id="contact">
+            <div class="contact__container grid">
+
+                <div class="contact__data">
+                    <h2 class="section__title-2 contact__h2">
+                        <span>Unlock Competitive Offers for Your Construction Requirements</span>
+                    </h2>
+
+                    <p class="contact__description-1">
+                        Empowering your vision, we craft success through unparalleled excellence,
+                        dedicated to fulfilling your distinct construction aspirations.
+                    </p>
+
+                    <div class="geometric-box"></div>
+                </div>
+
+                <div class="contact__mail">
+                    <h2 class="contact__title">
+                        WHAT SETS US APART-
+                    </h2>
+
+                    <form action="" class="contact__form" id="contact-form">
+                        <div class="contact__group">
+                            <div class="contact__box">
+                                <input type="text" name="user_name" class="contact__input" id="name" required
+                                    place="Full Name">
+                                <label for="name" class="contact__label">Your Name</label>
+                            </div>
+
+                            <div class="contact__box">
+                                <input type="email" name="user_email" class="contact__input" id="email" required
+                                    place="Email Address">
+                                <label for="email" class="contact__label">Email Address</label>
+                            </div>
+                        </div>
+
+                        <div class="contact__box">
+                            <input type="text" name="product_name" class="contact__input" id="product" required
+                                place="">
+                            <label for="subject" class="contact__label">Enter Product Name</label>
+                        </div>
+
+                        <div class="contact__box">
+                            <input type="text" name="product_quantity" class="contact__input" id="quantity" required
+                                place="">
+                            <label for="subject" class="contact__label">Enter Product Quantity</label>
+                        </div>
+
+                        <div class="contact__box contact__area">
+                            <textarea name="" id="user_message" class="contact__input" required
+                                placeholder=""></textarea>
+                            <label for="message" class="contact__label">Message</label>
+                        </div>
+
+                        <p class="contact__message" id="contact-message"></p>
+
+                        <button type="submit" class="contact__button button">
+                            <i class="ri-send-plane-line"></i> Get a Quote
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact__social">
+                    <img src="Assets/curved-arrow.svg" alt="" class="contact__social-arrow">
+
+                    <div class="contact__social-data">
+                        <div>
+                            <p class="contact__social-description-1">
+                                Does not send emails
+                            </p>
+
+                            <p class="contact__social-description-2">
+                                Write me on my social networks
+                            </p>
+                        </div>
+
+                        <div class="contact__social-links">
+                            <a href="https://www.facebook.com/" target="_blank" class="contact__social-link">
+                                <i class="ri-facebook-circle-fill"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/" target="_blank" class="contact__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/" target="_blank" class="contact__social-link">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- DISCOUNT -->
+
+        <section class="discount section" id="discount">
+            <div class="discount__container container grid price__container">
+                <div class="discount__data">
+                    <h2 class="discount__title section__title">
+                        The Best Prices in the Market for Construction
+                    </h2>
+
+                    <p class="discount__description">
+                        Looking for affordable construction materials and supplies? Look no further
+                        than our website, where you’ll find the best prices in the market.
+                    </p>
+
+                    <a href="#" class="button">Price Monitor</a>
+                </div>
+
+                <div class="discount__images price__image ">
+                    <img src="Assets/prices.png" alt="" class="price__image">
+
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOG -->
+
+        <section class="home section blog" id="blog">
+            <div class="home__container blog__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        BLOGS - <br>
+                        <span>Newsroom</span>
+                    </h1>
+
+                    <p class="home__description">
+                        Join us on a journey dedicated to shaping your success by delivering
+                        unparalleled dedication to excellence, custom-tailored to fulfill your
+                        unique construction dreams.
+                    </p>
+                </div>
+
+                <div class="home__images">
+                    <div class="home__swiper swiper">
+                        <div class="swiper-wrapper">
+
+                            <article class="home__article swiper-slide">
+                                <a href="blog" class="href">
+                                <img src="Assets/cpec.jpeg" alt="image" class="home__img">
+                                </a>
+                            </article>
+
+                            <article class="home__article swiper-slide">
+                                <a href="blog" class="href">
+                                <img src="Assets/discountonmaterial.jpeg" alt="image" class="home__img">
+                                </a>
+                            </article>
+
+                            <article class="home__article swiper-slide">
+                                <a href="blog" class="href">
+                                <img src="Assets/quality2.jpeg" alt="image" class="home__img">
+                                </a>
+                            </article>
+
+                            <article class="home__article swiper-slide">
+                                <a href="blog" class="href">
+                                <img src="Assets/technology.jpeg" alt="image" class="home__img">
+                                </a>
+                            </article>
+
+                            <article class="home__article swiper-slide">
+                                <a href="blog" class="href">
+                                <img src="Assets/impacton.jpeg" alt="image" class="home__img">
+                                </a>
+                            </article>
+                            <!-- Adjust titles and description file paths as needed -->
+
+                            <!-- Include other articles similarly -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Blog Card -->
+        <div class="blog-card" id="blogCard">
+            <div class="blog-card-content">
+                <h2 class="blog-card-title" id="blogTitle"></h2>
+                <p class="blog-card-description" id="blogDescription"></p>
+                <button class="close-blog-card" onclick="hideBlogCard()">Close</button>
+            </div>
+        </div>
+
+        <!-- CUSTOMERS AND SUPPLIERS -->
+
+        <section class="discount section custsup" id="discount">
+
+            <h1 class="section__title custsup__h1">Supported by well-known manufacturing <br>
+                companies, BRICKA is the best procurement
+                <br> platform for your business
+            </h1>
+
+            <h2 class="custsup__h2">
+                Our Suppliers -
+            </h2>
+            <div class="swiper-wrapper">
+
+                <div class="featured__container container suppliers__container">
+
+                    <article class="featured__card">
+                        <img src="Assets/sup1.png" alt="image" class="featured__img">
+                    </article>
+
+                    <article class="featured__card">
+                        <img src="Assets/sup2.png" alt="image" class="featured__img">
+                    </article>
+
+                    <article class="featured__card">
+                        <img src="Assets/sup3.png" alt="image" class="featured__img">
+                    </article>
+
+                    <article class="featured__card">
+                        <img src="Assets/sup4.png" alt="image" class="featured__img">
+                    </article>
+
+                    <article class="featured__card">
+                        <img src="Assets/sup5.png" alt="image" class="featured__img">
+                    </article>
+
+                    <article class="featured__card">
+                        <img src="Assets/sup6.png" alt="image" class="featured__img">
+                    </article>
+
+                    <article class="featured__card">
+                        <img src="Assets/sup7.png" alt="image" class="featured__img">
+                    </article>
+
+                    <article class="featured__card">
+                        <img src="Assets/sup8.png" alt="image" class="featured__img">
+                    </article>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="discount section custsup custsup-2" id="discount">
+
+            <h2 class="custsup__h2">
+                Our Customers -
+            </h2>
+            <div class="swiper-wrapper">
+
+                <div class="featured__container container suppliers__container">
+
+                    <article class="featured__card">
+                        <img src="Assets/cust1.png" alt="image" class="featured__img">
+                    </article>
+
+                    <article class="featured__card">
+                        <img src="Assets/cust2.png" alt="image" class="featured__img">
+                    </article>
+
+                    <article class="featured__card">
+                        <img src="Assets/cust3.png" alt="image" class="featured__img">
+                    </article>
+
+                    <article class="featured__card">
+                        <img src="Assets/cust4.png" alt="image" class="featured__img">
+                    </article>
+
+                    <article class="featured__card">
+                        <img src="Assets/cust5.png" alt="image" class="featured__img">
+                    </article>
+
+                    <article class="featured__card">
+                        <img src="Assets/cust6.png" alt="image" class="featured__img">
+                    </article>
+
+                    <article class="featured__card">
+                        <img src="Assets/cust7.png" alt="image" class="featured__img">
+                    </article>
+
+                    <article class="featured__card">
+                        <img src="Assets/cust8.png" alt="image" class="featured__img">
+                    </article>
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <div>
+          <a href="#" class="footer__logo">
+            <i class="ri-building-2-line"></i>BRICKA
+          </a>
+
+          <p class="footer__description">
+            Find and explore the best
+            <br />
+            construction material from
+            <br />
+            Pakistan's No.1 Website - BRICKA
+          </p>
+        </div>
+
+        <div class="footer__data grid">
+          <div>
+            <h3 class="footer__title">About</h3>
+
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">Awards</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link">FAQs</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link">Privacy policy</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link">Terms and Conditions</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Company</h3>
+
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">Blogs</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link">Community</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link">Our team</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link">Help center</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Contact</h3>
+
+            <ul class="footer__links">
+              <li>
+                <address class="footer__info">
+                  D-Ground - Faisalabad
+                  <br />
+                  Punjab 3800, Pakistan
+                </address>
+              </li>
+
+              <li>
+                <address class="footer__info">
+                  bricka.pk@gmail.com
+                  <br />
+                  +92 300 234 32 56
+                </address>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Social</h3>
+
+            <div class="footer__social">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-instagram-fill"></i>
+              </a>
+
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-twitter-x-fill"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <span class="footer__copy">
+        &#169; All Rights Reserved By BRICKA
+      </span>
+    </footer>
+
+    <!-- Milestone-4 / End / 2 January, 2023 -->
+
+    <!-- SCROLL UP -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!-- SCROLLREVEAL -->
+    <script src="/scrollreveal.min.js"></script>
+
+    <!-- Milestone-5 / End / 19 Dec, 2023 -->
+
+    <!-- SWIPER JS -->
+    <script src="/swiper-bundle.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="/Bricka.js"></script>
+
+    <!-- Email JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <!-- Additional JS Files -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    ></script>
+
+    <!-- Database JS -->
+
+  </body>
+
+</html>

@@ -1,0 +1,522 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="/Assets/favicon.png" type="image/x-icon" />
+
+    <!-- REMIXICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+    />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    />
+
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="/swiper-bundle.min.css" />
+
+    {{! CSS }}
+    <link rel="stylesheet" href="/Bricka.css" />
+
+    {{! CSS -Products }}
+    <link rel="stylesheet" href="/Products.css" />
+
+    {{! Title }}
+    <title>Products</title>
+
+  </head>
+  <body>
+
+    {{! Header }}
+
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="/Bricka" class="nav__logo">
+          <i class="ri-building-2-line"></i>
+          BRICKA BYTE
+        </a>
+
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="/Bricka" class="nav__link active-link">
+                <i class="ri-home-line"></i>
+                <span>Home</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="/about" class="nav__link">
+                <i class="ri-star-line"></i>
+                <span>About Us</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="/estimation" class="nav__link">
+                <i class="ri-price-tag-3-line"></i>
+                <span>Estimation</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="/products" class="nav__link">
+                <i class="ri-seo-line"></i>
+                <span>Products</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="/careers" class="nav__link">
+                <i class="ri-message-3-line"></i>
+                <span>Careers</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="/contact" class="nav__link">
+                <i class="ri-discuss-line"></i>
+                <span>Contact Us</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="/blog" class="nav__link">
+                <i class="ri-file-list-3-line"></i>
+                <span>Blog</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__actions">
+          {{#if user}}
+            <li>Welcome, {{user.firstName}}</li>
+            <!-- Logout Button -->
+            <a href="/logout" class="logout-button">
+              <i class="ri-logout-box-r-line" id="logout-buttons"></i>
+            </a>
+          {{else}}
+            <a href="/login" class="login-button">
+              <i class="ri-user-line" id="login-button"></i>
+            </a>
+          {{/if}}
+
+          <!-- Cart -->
+          <a href="#cart" class="cart-button">
+            <i class="ri-shopping-cart-line" id="cart-button"></i>
+          </a>
+          <!-- Theme Button -->
+          <i class="ri-moon-line" id="theme-button"></i>
+        </div>
+
+      </nav>
+    </header>
+
+    <!-- SEARCH -->
+    <div class="search" id="search-content">
+      <form action="" class="search__form">
+        <i class="ri-search-2-line search__icon"></i>
+        <input
+          type="search"
+          placeholder="What are you looking for?"
+          class="search__input"
+        />
+      </form>
+      <i class="ri-close-line search__close" id="search-close"></i>
+
+      <!-- Feature Products Section -->
+      <section class="feature-section">
+        <h2>Similar Products</h2>
+
+        <div class="feature-products">
+
+          <div class="product-card">
+            <img src="Assets/ftp1.png" alt="Product 1" />
+            <h3>Awal</h3>
+            <p>For solid structures, rely on our town's finest bricks today.
+              Unmatched bricks, the top choice in the city.
+            </p>
+            <button onclick="document.getElementById('cart-button').click()">Go
+              to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="Assets/ftp2.png" alt="Product 2" />
+            <h3>Doom 1</h3>
+            <p>In our town, the most trusted bricks for sturdy foundations.
+              Quality that stands tall, these bricks are your best investment.</p>
+            <button onclick="document.getElementById('cart-button').click()">Go
+              to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="Assets/ftp3.png" alt="Product 3" />
+            <h3>Doom 2</h3>
+            <p>Premium bricks, the epitome of excellence in town. Building
+              dreams with durability, these bricks lead the way.</p>
+            <button onclick="document.getElementById('cart-button').click()">Go
+              to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="Assets/ftp4.png" alt="Product 4" />
+            <h3>Doom 3</h3>
+            <p>The town's supreme bricks, unparalleled in quality. Superior
+              bricks reign as the pinnacle choice within the town.
+            </p>
+            <button onclick="document.getElementById('cart-button').click()">Go
+              to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="Assets/ftp5.png" alt="Product 5" />
+            <h3>Soom 1</h3>
+            <p>For solid structures, rely on our town's finest bricks today.
+              Unmatched bricks, the top choice in the city.
+            </p>
+            <button onclick="document.getElementById('cart-button').click()">Go
+              to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="Assets/fpt6.png" alt="Product 6" />
+            <h3>Soom 2</h3>
+            <p>In our town, the most trusted bricks for sturdy foundations.
+              Quality that stands tall, these bricks are your best investment.</p>
+            <button onclick="document.getElementById('cart-button').click()">Go
+              to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="Assets/ftp7.png" alt="Product 7" />
+            <h3>Soom 3</h3>
+            <p>Premium bricks, the epitome of excellence in town. Building
+              dreams with durability, these bricks lead the way.</p>
+            <button onclick="document.getElementById('cart-button').click()">Go
+              to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="Assets/ftp8.png" alt="Product 8" />
+            <h3>Premium</h3>
+            <p>The town's supreme bricks, unparalleled in quality. Superior
+              bricks reign as the pinnacle choice within the town.
+            </p>
+            <button onclick="document.getElementById('cart-button').click()">Go
+              to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="Assets/ftp9.png" alt="Product 9" />
+            <h3>Gold</h3>
+            <p>The town's supreme bricks, unparalleled in quality. Superior
+              bricks reign as the pinnacle choice within the town.
+            </p>
+            <button onclick="document.getElementById('cart-button').click()">Go
+              to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="Assets/ftp10.png" alt="Product 10" />
+            <h3>Silver</h3>
+            <p>The town's supreme bricks, unparalleled in quality. Superior
+              bricks reign as the pinnacle choice within the town.
+            </p>
+            <button onclick="document.getElementById('cart-button').click()">Go
+              to Cart</button>
+          </div>
+
+        </div>
+
+        <!-- Add more product cards as needed -->
+      </section>
+    </div>
+
+    <!-- CART -->
+    <div class="cart" id="cart-content">
+      <div class="cart__container">
+        <h1>Shopping Cart</h1>
+        <div class="cart__products">
+
+          <div class="cart__product" id="product1">
+            <img src="Assets/ftp1.png" alt="Product 1" />
+            <p>Awal - Rs.55
+              <Rs class="55" />
+            </p>
+            <input type="number" id="quantity1" value="1" min="1" />
+            <button onclick="addToCart('Product 1', 55, 'quantity1')">Add to
+              Cart</button>
+          </div>
+
+          <div class="cart__product" id="product2">
+            <img src="Assets/ftp2.png" alt="Product 2" />
+            <p>Doom 1 - Rs.50
+              <Rs class="50" />
+            </p>
+            <input type="number" id="quantity2" value="1" min="1" />
+            <button onclick="addToCart('Product 2', 50, 'quantity2')">Add to
+              Cart</button>
+          </div>
+
+          <div class="cart__product" id="product3">
+            <img src="Assets/ftp3.png" alt="Product 3" />
+            <p>Doom 2 - Rs.45
+              <Rs class="45" />
+            </p>
+            <input type="number" id="quantity3" value="1" min="1" />
+            <button onclick="addToCart('Product 3', 45, 'quantity3')">Add to
+              Cart</button>
+          </div>
+
+          <div class="cart__product" id="product4">
+            <img src="Assets/ftp4.png" alt="Product 4" />
+            <p>Doom 3 - Rs.40
+              <Rs class="40" />
+            </p>
+            <input type="number" id="quantity4" value="1" min="1" />
+            <button onclick="addToCart('Product 4', 40, 'quantity4')">Add to
+              Cart</button>
+          </div>
+
+          <div class="cart__product" id="product5">
+            <img src="Assets/ftp5.png" alt="Product 5" />
+            <p>Soom 1 - Rs.35
+              <Rs class="35" />
+            </p>
+            <input type="number" id="quantity5" value="1" min="1" />
+            <button onclick="addToCart('Product 5', 35, 'quantity5')">Add to
+              Cart</button>
+          </div>
+
+          <div class="cart__product" id="product6">
+            <img src="Assets/fpt6.png" alt="Product 6" />
+            <p>Soom 2 - Rs.30
+              <Rs class="30" />
+            </p>
+            <input type="number" id="quantity6" value="1" min="1" />
+            <button onclick="addToCart('Product 6', 30, 'quantity6')">Add to
+              Cart</button>
+          </div>
+
+          <div class="cart__product" id="product7">
+            <img src="Assets/ftp7.png" alt="Product 2" />
+            <p>Soom 3 - Rs.25
+              <Rs class="25" />
+            </p>
+            <input type="number" id="quantity7" value="1" min="1" />
+            <button onclick="addToCart('Product 7', 25, 'quantity7')">Add to
+              Cart</button>
+          </div>
+
+          <div class="cart__product" id="product8">
+            <img src="Assets/ftp8.png" alt="Product 8" />
+            <p>Premium - Rs.100
+              <Rs class="100" />
+            </p>
+            <input type="number" id="quantity8" value="1" min="1" />
+            <button onclick="addToCart('Product 8', 100, 'quantity8')">Add to
+              Cart</button>
+          </div>
+
+          <div class="cart__product" id="product2">
+            <img src="Assets/ftp9.png" alt="Product 9" />
+            <p>Gold - Rs.95
+              <Rs class="95" />
+            </p>
+            <input type="number" id="quantity9" value="1" min="1" />
+            <button onclick="addToCart('Product 9', 95, 'quantity9')">Add to
+              Cart</button>
+          </div>
+
+          <div class="cart__product" id="product10">
+            <img src="Assets/ftp10.png" alt="Product 10" />
+            <p>Silver - Rs.75
+              <Rs class="75" />
+            </p>
+            <input type="number" id="quantity10" value="1" min="1" />
+            <button onclick="addToCart('Product 10', 75, 'quantity10')">Add to
+              Cart</button>
+          </div>
+
+        </div>
+        <div class="cart1">
+          <h2>Cart</h2>
+          <ul id="cart-items">
+
+          </ul>
+          <p>Total: Rs.<span id="total">0</span></p>
+          <button class="button" onclick="checkout()">Checkout</button>
+        </div>
+      </div>
+
+      <i class="ri-close-line cart__close" id="cart-close"></i>
+    </div>
+    {{!-- <section class="discount section custsup prod_sec  " id="discount">
+
+      <h1 class="section__title custsup__h1">Empowered by industry-leading manufacturers, <br>
+      BRICKA stands as the premier procurement platform <br>
+      for all your construction material needs.
+      </h1>
+
+    </section> --}}
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <div>
+          <a href="#" class="footer__logo">
+            <i class="ri-building-2-line"></i>BRICKA
+          </a>
+
+          <p class="footer__description">
+            Find and explore the best
+            <br />
+            construction material from
+            <br />
+            Pakistan's No.1 Website - BRICKA
+          </p>
+        </div>
+
+        <div class="footer__data grid">
+          <div>
+            <h3 class="footer__title">About</h3>
+
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">Awards</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link">FAQs</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link">Privacy policy</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link">Terms and Conditions</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Company</h3>
+
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">Blogs</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link">Community</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link">Our team</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link">Help center</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Contact</h3>
+
+            <ul class="footer__links">
+              <li>
+                <address class="footer__info">
+                  D-Ground - Faisalabad
+                  <br />
+                  Punjab 3800, Pakistan
+                </address>
+              </li>
+
+              <li>
+                <address class="footer__info">
+                  bricka.pk@gmail.com
+                  <br />
+                  +92 300 234 32 56
+                </address>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Social</h3>
+
+            <div class="footer__social">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-instagram-fill"></i>
+              </a>
+
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-twitter-x-fill"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <span class="footer__copy">
+        &#169; All Rights Reserved By BRICKA
+      </span>
+    </footer>
+
+    <!-- SCROLL UP -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!-- SCROLLREVEAL -->
+    <script src="/scrollreveal.min.js"></script>
+
+    <!-- Milestone-5 / End / 19 Dec, 2023 -->
+
+    <!-- SWIPER JS -->
+    <script src="/swiper-bundle.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="/Bricka.js"></script>
+
+    <!-- Email JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <!-- Additional JS Files -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    ></script>
+
+    <!-- Database JS -->
+  </body>
+</html>
